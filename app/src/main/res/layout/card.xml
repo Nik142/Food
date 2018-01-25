@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="@color/cardview_light_background"
+    card_view:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/soupcard"
+            android:id="@+id/image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/soupName"
+            android:text="Tomato Soup"
+            android:layout_toEndOf="@+id/image"
+            android:textColor="#000"
+            android:layout_margin="5dp"
+            android:textSize="17sp"
+            android:drawableRight="@drawable/veg1"
+            android:drawablePadding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹500"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Soup_desc"
+            android:textColor="#000"
+            android:layout_below="@+id/soupName"
+            android:layout_toRightOf="@id/image"
+            android:layout_margin="5dp"
+            android:id="@+id/textView" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingbar"
+            android:layout_below="@id/image"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:numStars="5"
+            android:rating="3.5"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleX="0.6"
+            android:scaleY="0.8"
+            android:transformPivotX="0dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/commentsText"
+            android:layout_alignStart="@+id/textView"
+            android:layout_alignTop="@+id/ratingbar"
+            android:layout_marginStart="26dp"
+            android:text="65"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:drawableStart="@drawable/comments"
+            android:drawablePadding="5dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pinText"
+            android:text="15"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/commentsText"
+            android:layout_below="@id/image"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/pin"
+            android:drawablePadding="5dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/image"
+            android:layout_margin="5dp"
+            android:drawableEnd="@drawable/minus"
+            android:drawableStart="@drawable/add"
+            android:drawablePadding="5dp"
+            android:text="02"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
